@@ -1,0 +1,26 @@
+[package]
+name = "rust-tests"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ferris-says = "0.2"
+rand = "0.8.3"
+
+[[bin]]
+name = "guess"
+path = "src/guess.rs"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[[bin]]
+name = "variables"
+path = "src/variables.rs"
+
+[[bin]]
+name = "ownership"
+path = "src/ownership.rs"
