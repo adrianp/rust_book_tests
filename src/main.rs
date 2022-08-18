@@ -5,5 +5,6 @@ fn evaluate(x: f32) -> f32 {
 }
 
 fn main() {
+    // println! is a macro: https://stackoverflow.com/questions/29611387/why-does-the-println-function-use-an-exclamation-mark-in-rust
     println!("{}", evaluate(17.0));
 }

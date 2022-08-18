@@ -24,3 +24,7 @@ path = "src/variables.rs"
 [[bin]]
 name = "ownership"
 path = "src/ownership.rs"
+
+[[bin]]
+name = "slices"
+path = "src/slices.rs"
