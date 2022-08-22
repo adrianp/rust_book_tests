@@ -5,6 +5,20 @@ struct User {
     username: String,
 }
 
+impl User {
+    // &self is shorthand for self: &Self
+    fn username_length(&self) -> usize {
+        self.username.len()
+    }
+
+    fn get_some_user(active: bool) -> Self {
+        User {
+            username: String::from("janedoe"),
+            active
+        }
+    }
+}
+
 #[derive(Debug)]
 struct RGB(i32, i32, i32);
 
@@ -17,6 +31,12 @@ fn main() {
         active: true,
         username,
     };
+
+    println!("username length is: {}", user.username_length());
+    println!("username length is: {}", (&user).username_length());
+
+    let jane_doe = User::get_some_user(false);
+    println!("{:#?}", jane_doe);
 
     user.username = String::from("adriantudorp");
     print_user(&user);
