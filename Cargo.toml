@@ -28,3 +28,7 @@ path = "src/ownership.rs"
 [[bin]]
 name = "slices"
 path = "src/slices.rs"
+
+[[bin]]
+name = "structs"
+path = "src/structs.rs"

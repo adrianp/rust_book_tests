@@ -32,6 +32,7 @@ fn string_length(some_string: &mut String) -> usize {
     some_string.len()
 }
 
+// https://blog.rust-lang.org/2018/12/06/Rust-1.31-and-rust-2018.html#non-lexical-lifetimes
 fn _nll() {
     let mut x = 5;
     let _y = &x;
