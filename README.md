@@ -15,3 +15,6 @@ The Rust module system, includes:
 * Crates: A tree of modules that produces a library or executable (we have binary and library crates)
 * Packages: A Cargo feature that lets you build, test, and share crates
 * Paths: A way of naming an item, such as a struct, function, or module
+
+Other resources:
+* [Rust Api Guidelines](https://rust-lang.github.io/api-guidelines/about.html)
