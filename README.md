@@ -9,3 +9,9 @@ Some useful commands:
 * To compile a specific file: `rustc src/structs.rs -o main`
 * To update Rust: `rustup update`
 * To generate local documentation: `rustup doc`
+
+The Rust module system, includes:
+* Modules and use: Let you control the organization, scope, and privacy of paths
+* Crates: A tree of modules that produces a library or executable (we have binary and library crates)
+* Packages: A Cargo feature that lets you build, test, and share crates
+* Paths: A way of naming an item, such as a struct, function, or module
