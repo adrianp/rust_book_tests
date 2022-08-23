@@ -1,8 +1,10 @@
-mod front_of_house {
-    pub mod hosting {
-        pub fn add_to_waitlist() {}
-    }
-}
+// nested path
+use std::{cmp::Ordering, alloc};
+use std::io::{self, Write};
+
+// loading from ./front_of_house.rs
+mod front_of_house;
+
 
 mod back_of_house {
     fn fix_incorrect_order() {
@@ -35,9 +37,12 @@ mod back_of_house {
     }
 }
 
+// by appending pub we are re-exporting
+pub use crate::front_of_house::hosting as restaurant_hosting;
+
 pub fn eat_at_restaurant() {
     // Absolute path
-    crate::front_of_house::hosting::add_to_waitlist();
+    restaurant_hosting::add_to_waitlist();
 
     // Relative path
     front_of_house::hosting::add_to_waitlist();

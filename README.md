@@ -18,3 +18,4 @@ The Rust module system, includes:
 
 Other resources:
 * [Rust Api Guidelines](https://rust-lang.github.io/api-guidelines/about.html)
+* [Rust crate registry](https://crates.io/)
