@@ -15,7 +15,6 @@ fn main() {
     let result = first_word(&my_string);
     println!("{:?}", result);
 
-
     let a = [1, 2, 3, 4, 5];
     let slice = &a[1..3];
     assert_eq!(slice, &[2, 3]);

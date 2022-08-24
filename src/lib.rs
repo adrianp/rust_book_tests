@@ -1,10 +1,9 @@
 // nested path
-use std::{cmp::Ordering, alloc};
 use std::io::{self, Write};
+use std::{alloc, cmp::Ordering};
 
 // loading from ./front_of_house.rs
 mod front_of_house;
-
 
 mod back_of_house {
     fn fix_incorrect_order() {
@@ -46,7 +45,6 @@ pub fn eat_at_restaurant() {
 
     // Relative path
     front_of_house::hosting::add_to_waitlist();
-
 
     // Order a breakfast in the summer with Rye toast
     let mut meal = back_of_house::Breakfast::summer("Rye");

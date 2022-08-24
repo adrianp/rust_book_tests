@@ -14,7 +14,7 @@ impl User {
     fn get_some_user(active: bool) -> Self {
         User {
             username: String::from("janedoe"),
-            active
+            active,
         }
     }
 }
@@ -54,7 +54,6 @@ fn main() {
     let blue = RGB(0, 0, 10);
     println!("{}", blue.2);
     dbg!(&blue);
-
 }
 
 fn print_user(user: &User) {

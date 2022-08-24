@@ -9,6 +9,8 @@ Some useful commands:
 * To compile a specific file: `rustc src/structs.rs -o main`
 * To update Rust: `rustup update`
 * To generate local documentation: `rustup doc`
+* To format the code: `cargo fmt`
+* To check the code for issues: `cargo clippy` or `cargo clippy -- -A clippy::all` (also see [docs](https://github.com/rust-lang/rust-clippy#clippy))
 
 The Rust module system, includes:
 * Modules and use: Let you control the organization, scope, and privacy of paths

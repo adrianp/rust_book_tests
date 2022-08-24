@@ -1,6 +1,6 @@
 fn main() {
     let l = [1, 2, 3];
-    let mut v : Vec<i32> = Vec::from(l);
+    let mut v: Vec<i32> = Vec::from(l);
     v.push(4);
 
     let mut first = v[0];
@@ -31,6 +31,10 @@ fn main() {
         Cat(i32, String),
         Dog(i32, String),
     }
-    let zoo = vec![Animal::Cat(1, String::from("Tom")), Animal::Cat(2, String::from("Tommy")), Animal::Dog(3, String::from("Spike"))];
+    let zoo = vec![
+        Animal::Cat(1, String::from("Tom")),
+        Animal::Cat(2, String::from("Tommy")),
+        Animal::Dog(3, String::from("Spike")),
+    ];
     println!("{:?}", zoo);
 }

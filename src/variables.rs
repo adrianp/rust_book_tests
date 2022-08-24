@@ -1,7 +1,6 @@
 fn main() {
-
     // shadowing
- 
+
     let x = 5;
 
     let x = x + 1;
@@ -13,8 +12,7 @@ fn main() {
 
     println!("The value of x is: {x}");
 
-
-    let y:i8 = 127;
+    let y: i8 = 127;
     let result = overflows(y);
     println!("returned {result}");
 
@@ -24,9 +22,8 @@ fn main() {
     };
     println!("{z}");
 
-    let number = if true {3} else {4};
+    let number = if true { 3 } else { 4 };
     println!("{number}");
-
 }
 
 fn overflows(y: i8) -> i8 {

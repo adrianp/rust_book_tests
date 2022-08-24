@@ -2,7 +2,6 @@ use crate::garden::vegetables::Asparagus;
 
 pub mod garden;
 
-
 fn evaluate(x: f32) -> f32 {
     println!("{}", x.to_bits());
     let result = (x - 16.0).powf(2.0) / 16.0 + 16.0;

@@ -1,6 +1,6 @@
 enum IpAddr {
     V4(String),
-    V6(String)
+    V6(String),
 }
 
 impl IpAddr {
@@ -21,19 +21,16 @@ fn main() {
     let y: Option<i8> = Some(5);
     let result = match y {
         None => x,
-        Some(i) => { 
-            x + i
-        },
+        Some(i) => x + i,
         _ => x, // assuming this was reachable, this would be the fallback for the match
     };
     println!("{}", result);
 
     if let Some(i) = y {
-        println!("{}", x+i);
+        println!("{}", x + i);
     } else {
         println!("{}", x);
     }
-    
 }
 
 fn route(ip: IpAddr) {}

@@ -1,9 +1,8 @@
-use std::io;
 use rand::Rng;
 use std::cmp::Ordering;
+use std::io;
 
 fn main() {
-
     let secret = rand::thread_rng().gen_range(1..=100);
     let mut tries = 0;
 
@@ -13,11 +12,9 @@ fn main() {
         println!("Make a guess:");
 
         let mut guess = String::new();
-        io::stdin()
-            .read_line(&mut guess)
-            .expect("Invalid input");
+        io::stdin().read_line(&mut guess).expect("Invalid input");
 
-        let guess:u32 = match guess.trim().parse() {
+        let guess: u32 = match guess.trim().parse() {
             Ok(num) => num,
             Err(_) => {
                 println!("Invalid input");

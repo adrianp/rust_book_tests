@@ -1,6 +1,6 @@
 fn main() {
     let mut s1 = String::from("helllo");
-    let mut s2 = s1.clone();  // if we didn't clone, s1 would be moved and s2 would be invalid
+    let mut s2 = s1.clone(); // if we didn't clone, s1 would be moved and s2 would be invalid
     s1.push_str(" world");
     println!("{}, {}", s1, s2);
 
@@ -14,7 +14,6 @@ fn main() {
     let r1 = &mut s2;
     let size = string_length(r1);
     println!("{}, {}", s2, size);
-
 }
 
 fn takes_ownership(some_string: String) {
