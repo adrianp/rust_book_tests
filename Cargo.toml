@@ -38,3 +38,7 @@ path = "src/structs.rs"
 name = "enums"
 path = "src/enums.rs"
 
+[[bin]]
+name = "vectors"
+path = "src/vectors.rs"
+
