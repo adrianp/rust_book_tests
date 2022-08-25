@@ -42,3 +42,6 @@ path = "src/enums.rs"
 name = "vectors"
 path = "src/vectors.rs"
 
+[[bin]]
+name = "strings"
+path = "src/strings.rs"
