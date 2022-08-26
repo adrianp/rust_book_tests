@@ -37,4 +37,11 @@ fn main() {
         Animal::Dog(3, String::from("Spike")),
     ];
     println!("{:?}", zoo);
+
+    let l = [3, 9, 1, 8, 7, 2, 9, 1, 14, 2, 11];
+    let mut numbers: Vec<i32> = Vec::from(l);
+    numbers.sort();
+    println!("{:?}", v);
+    let median = numbers[numbers.len()/2];
+    println!("{}", median);
 }

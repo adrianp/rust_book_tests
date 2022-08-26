@@ -45,3 +45,7 @@ path = "src/vectors.rs"
 [[bin]]
 name = "strings"
 path = "src/strings.rs"
+
+[[bin]]
+name = "hash"
+path = "src/hash.rs"
