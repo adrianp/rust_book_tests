@@ -4,6 +4,9 @@ version = "0.1.0"
 edition = "2021"
 default-run = "main"
 
+[profile.release]
+panic = 'abort'
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
@@ -49,3 +52,7 @@ path = "src/strings.rs"
 [[bin]]
 name = "hash"
 path = "src/hash.rs"
+
+[[bin]]
+name = "errors"
+path = "src/errors.rs"

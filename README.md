@@ -21,3 +21,4 @@ The Rust module system, includes:
 Other resources:
 * [Rust Api Guidelines](https://rust-lang.github.io/api-guidelines/about.html)
 * [Rust crate registry](https://crates.io/)
+* To display stack traces run with `RUST_BACKTRACE=1` or `RUST_BACKTRACE=full`
