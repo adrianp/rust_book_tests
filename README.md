@@ -11,6 +11,9 @@ Some useful commands:
 * To generate local documentation: `rustup doc`
 * To format the code: `cargo fmt`
 * To check the code for issues: `cargo clippy` or `cargo clippy -- -A clippy::all` (also see [docs](https://github.com/rust-lang/rust-clippy#clippy))
+* To update dependencies: `cargo update`
+* To show dependencies: `cargo tree`
+* To remove unused installed dependencies: `cargo clean`
 
 The Rust module system, includes:
 * Modules and use: Let you control the organization, scope, and privacy of paths
