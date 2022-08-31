@@ -55,3 +55,7 @@ path = "src/hash.rs"
 [[bin]]
 name = "errors"
 path = "src/errors.rs"
+
+[[bin]]
+name = "generics"
+path = "src/generics.rs"
