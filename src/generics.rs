@@ -15,9 +15,11 @@ struct Point<T, U> {
     y: U
 }
 
-impl<T: std::fmt::Display, U: std::fmt::Display> Point<T, U> {
+// found out the hard way that std::fmt:Display does not print floating points:
+// https://stackoverflow.com/questions/73555948/rust-float-formatted-as-integer-by-generics
+impl<T: std::fmt::Debug, U: std::fmt::Debug> Point<T, U> {
     fn print(&self) {
-        println!("({},{})", &self.x, &self.y );
+        println!("({:?},{:?})", &self.x, &self.y );
     }
 }
 
