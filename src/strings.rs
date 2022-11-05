@@ -1,6 +1,7 @@
 fn main() {
-    // String is a wrapper over Vec<u8>
+    // String is a wrapper over Vec<u8> and is mutable
     let s1 = String::from("Hello ");
+    // a str is immutable
     let s2 = "world!".to_string();
 
     // note that the + operator has the following signature: fn add(self, s: &str) -> String {
