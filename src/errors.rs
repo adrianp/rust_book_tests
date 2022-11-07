@@ -49,7 +49,7 @@ fn read_from_file() -> Result<String, Error> {
 
     let mut username = String::new();
 
-    // ? performs early returns
+    // ? performs early *returns*
     File::open("hello.txt")?.read_to_string(&mut username)?;
 
     return Ok(username);

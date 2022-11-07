@@ -20,6 +20,12 @@ impl Guess {
     }
 }
 
+#[test]
+#[should_panic(expected="should be between")]
+fn guess_too_high() {
+    Guess::new(1000);
+}
+
 fn main() {
     let secret = rand::thread_rng().gen_range(1..=100);
     let mut tries = 0;

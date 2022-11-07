@@ -14,6 +14,8 @@ Some useful commands:
 * To update dependencies: `cargo update`
 * To show dependencies: `cargo tree`
 * To remove unused installed dependencies: `cargo clean`
+* To run tests: `RUST_BACKTRACE=1 cargo test [--bin <binary name>]`
+
 
 The Rust module system, includes:
 * Modules and use: Let you control the organization, scope, and privacy of paths

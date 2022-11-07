@@ -54,3 +54,25 @@ fn main() {
 
     println!("{:?}", i)
 }
+
+#[test]
+fn test_longest() {
+    let mut result = longest("abc", "ab");
+    assert_eq!(result, "abc");
+
+    result = longest("ab", "abc");
+    assert_ne!(result, "ab");
+
+    result = longest("abc", "abc");
+    assert_eq!(result, "abc");
+
+    result = longest("", "");
+    assert_eq!(result, "");
+}
+
+#[test]
+fn test_longest_fail() {
+    let result = longest("abc", "ab");
+    assert_eq!(result, "ab", "This is a custom failure message");
+}
+
